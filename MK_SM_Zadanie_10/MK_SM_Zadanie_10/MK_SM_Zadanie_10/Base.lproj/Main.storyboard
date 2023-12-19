@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9If-K7-Hoh">
+                                <rect key="frame" x="130" y="396" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="V9c-g1-Qfq" appends="YES" id="CAF-71-CU6"/>
+                            <outletCollection property="gestureRecognizers" destination="9n2-Dk-thZ" appends="YES" id="IhF-5U-220"/>
+                            <outletCollection property="gestureRecognizers" destination="Sdc-ee-cSv" appends="YES" id="TMz-nF-1XX"/>
+                            <outletCollection property="gestureRecognizers" destination="hLz-qn-WRs" appends="YES" id="qLu-Au-KtT"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="gestureLabel" destination="9If-K7-Hoh" id="jXB-hG-206"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="V9c-g1-Qfq">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="L4s-o1-b6m"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="9n2-Dk-thZ">
+                    <connections>
+                        <action selector="pinchGesture:" destination="BYZ-38-t0r" id="eMC-ff-GrY"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Sdc-ee-cSv">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="CwU-5N-djx"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="2" id="hLz-qn-WRs">
+                    <connections>
+                        <action selector="longPressGesture:" destination="BYZ-38-t0r" id="IEe-WR-04T"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
